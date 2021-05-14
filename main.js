@@ -17,13 +17,13 @@ function getMenu() {
 
 function add_item() {
     var htmldata2;
-    var item  = document.getElementById("add_item").value
+    var item  = document.getElementById("add_item").value;
     menu_list_array.push(item);
     menu_list_array.sort();
-    htmldata2 = "<section class = 'cards'>"
+    htmldata2 = "<section class = 'cards'>";
     for (var i = 0; i < menu_list_array.length; i++) {
-        htmldata = htmldata2 + "<div class = 'cards'>" + "<img src = 'pizzaImg.png'>" + menu_list_array[i] + "</div>"
+        htmldata2 = htmldata2 + "<div class = 'cards'>" + "<img src = 'pizzaImg.png'>" + menu_list_array[i] + "</div>";
     }
-    htmldata2 = htmldata2 + "</section>"
+    htmldata2 = htmldata2 + "</section>";
     document.getElementById("display_addedmenu").innerHTML = htmldata2;
 }
